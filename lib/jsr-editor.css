@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+.jsredt-toolbar-btn:active, .sbutton:active {
+    transform: scale(.85)
+}
+
+.jsredt-toolbar-btn, .jsredt-toolbar-btn:active, .jsredt-toolbar-btn:hover {
+    background-color: transparent
+}
+
+.jsredt-dialog .dragger img, .jsredt-dialog .jsredt-btns img {
+    width: 18px;
+    height: 18px;
+    margin-top: -3px;
+    filter: invert(30%)
+}
+
+[contentEditable=true] :hover:not(.focused) {
+    outline: revert dotted 1px !important
+}
+
+[contentEditable=false] :hover:not(.focused) {
+    outline: revert !important
+}
+
+.focused, .focused:hover {
+    outline: dashed 2px !important;
+    outline-offset: 2px !important;
+    color: revert
+}
+
+#jsredt-container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px
+}
+
+#jsredt-toolbar {
+    text-align: center;
+    left: 25px;
+    top: 25px;
+    width: 94px;
+    padding: 4px;
+    height: auto;
+    position: fixed;
+    z-index: 99999;
+    background: hsla(0, 0%, 80%, .85);
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .3)
+}
+
+.jsredt-toolbar-icon-dragger {
+    width: 100%;
+    filter: invert(96%);
+    cursor: move
+}
+
+.jsredt-toolbar-btn, .sbutton {
+    cursor: pointer;
+    display: inline-block
+}
+
+#jsredt-dialog-head .edit-all, #jsredt-dialog-head .title, #jsredt-dialog-image input.alt, #jsredt-dialog-image input.src, .jsredt-toolbar-icon {
+    width: 100%
+}
+
+.jsredt-toolbar button:disabled, .jsredt-toolbar button[disabled] {
+    cursor: default
+}
+
+.jsredt-toolbar button:disabled img, .jsredt-toolbar button[disabled] img {
+    filter: invert(60%)
+}
+
+.jsredt-toolbar-btn {
+    box-sizing: none;
+    color: #333;
+    width: 100%;
+    max-width: 42px;
+    padding: 9px;
+    border: none;
+    text-align: center;
+    text-decoration: none
+}
+
+.jsredt-toolbar-btn:focus {
+    outline: 0
+}
+
+.jsredt-toolbar-btn:active:disabled, input.sbutton:active, textarea.sbutton:active {
+    transform: none
+}
+
+.sbutton {
+    background-color: #fafafa;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .04) 0 1px 0, rgba(255, 255, 255, .25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #242424;
+    padding: 6px 14px;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word
+}
+
+textarea.sbutton {
+    display: block;
+    white-space: pre;
+    word-wrap: revert;
+    overflow-wrap: normal;
+    overflow-x: scroll
+}
+
+.jsredt-btns {
+    width: 100%;
+    text-align: right
+}
+
+.jsredt-btns-left {
+    float: left
+}
+
+.jsredt-btns-left button {
+    margin-right: 4px
+}
+
+.jsredt-btns-right button {
+    margin-left: 4px
+}
+
+.jsredt-dialog {
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .3);
+    width: 500px;
+    max-width: 100%;
+    max-height: 100%
+}
+
+.jsredt-dialog label {
+    padding: 2px
+}
+
+.jsredt-dialog .dragger {
+    cursor: move
+}
+
+.jsredt-dialog .dragger.sbutton {
+    background-color: transparent;
+    border: none;
+    padding-left: 12px;
+    font-size: 18px
+}
+
+.jsredt-dialog .body {
+    height: calc(100% - 96px);
+    margin: 10px 0
+}
+
+.jsredt-dialog .dragger img {
+    margin-right: 10px
+}
+
+#jsredt-dialog-code, #jsredt-dialog-head {
+    width: 720px
+}
+
+#jsredt-dialog-code textarea, #jsredt-dialog-head .all {
+    width: 100%;
+    min-height: 200px;
+    height: 100%
+}
+
+#jsredt-dialog-head .body, #jsredt-dialog-image .body, #jsredt-dialog-link .body {
+    padding: 8px
+}
+
+#jsredt-dialog-link .body input:not([type=checkbox]), #jsredt-dialog-link .body textarea {
+    width: 100%;
+    margin-bottom: 10px
+}
+
+#jsredt-dialog-image .preview {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 45px;
+    max-height: 160px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-image: repeating-linear-gradient(45deg, #fff, #fff 10px, #eee 10px, #eee 20px)
+}
+
+#jsredt-dialog-image .preview .image {
+    padding: 0;
+    width: auto;
+    height: 100%;
+    max-height: 160px
+}
+
+#jsredt-dialog-image .image-remove {
+    float: right
+}
+
+#jsredt-dialog-image-upload {
+    position: absolute;
+    bottom: 2px;
+    right: 2px
+}
+
+#jsredt-dialog-image-file {
+    position: absolute;
+    bottom: 111%;
+    right: 111%;
+    width: 1px;
+    height: 1px
+}
+
+#jsredt-dialog-image-float, #jsredt-dialog-image-height, #jsredt-dialog-image-padding, #jsredt-dialog-image-width {
+    width: 82px
+}
+
+#jsredt-dialog-head .description {
+    width: 100%;
+    min-height: 80px;
+    height: 100%
+}
+
+.separator {
+    margin-bottom: 10px
+}
