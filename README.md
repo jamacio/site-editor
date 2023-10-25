@@ -12,4 +12,5 @@ To utilize the site-editor library, follow the steps below:
 
    ```html
    <!-- jsredt-init:before -->
+    <link rel="stylesheet" href="https://jamacio.github.io/site-editor/lib/jsr-editor.css">
     <script src="https://jamacio.github.io/site-editor/lib/jsr-editor.js"></script>
